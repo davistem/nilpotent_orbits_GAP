@@ -58,10 +58,10 @@ OrbitsE8_0
 OrbitsE8_2                          
 OrbitsE8_3                          
 OrbitsF4_0                          
-OrbitsF4_2
-OrbitsG2_0
-OrbitsG2_2
-OrbitsG2_3
+OrbitsF4_2 
+OrbitsG2_0 
+OrbitsG2_2 
+OrbitsG2_3 
 
 # Lawther--Testerman representatives 
 
