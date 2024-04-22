@@ -93,7 +93,7 @@ The Jacobson--Morozov theorem implies that each $e$ can be extended to a subalge
 
 There is also some induction data recorded from the Elashvili--de Graaf paper.
 
-### jblockcode.g (Jordan Blocks)
+## jblockcode.g (Jordan Blocks)
 
 The file 
 
