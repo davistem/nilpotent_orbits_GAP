@@ -1,4 +1,4 @@
-### nilpotent_orbits_GAP
+# nilpotent_orbits_GAP
 GAP functions to work with nilpotent orbits for exceptional type simple Lie algebras in all characteristics, including Jordan block calculations.
 
 ## Introduction
@@ -25,7 +25,7 @@ On loading
 
 one can access representatives these orbits expressed in terms of `B'.
 
-# Liebeck--Seitz orbit representatives 
+### Liebeck--Seitz orbit representatives 
 
  For example:
 
@@ -73,24 +73,47 @@ OrbitsG2_2
 
 OrbitsG2_3 
 
-# Lawther--Testerman representatives 
+### Lawther--Testerman representatives 
 
 Taken from their Centers of Centralisers Memoir of the AMS. Usable in good characteristic and they come with the associated cocharacters as well.
 
-# Vigre orbits
+### Vigre orbits
 
 Taken from a Vigre paper. These do not work except possibly in good characteristic.
 
-# Group centraliser dimensions
+### Group centraliser dimensions
 
 It is often useful to know $\mathrm{dim}_k C_G(e)$ for $e$ a nilpotent element. These are recorded as lists of the form `GrpCentG2_0'.
 
-# Standard sl2 triples
+### Standard sl2 triples
 
 The Jacobson--Morozov theorem implies that each $e$ can be extended to a subalgebra $\langle e,h,f\rangle\cong \mathfrak{sl}_2$. (Except one orbit in $G_2$ in characteristic 3.) The `SL2TriplesE8' function, for example, will match each orbit up with some obvious choices of $h$ and $f$. These will work in good characteristic.
 
-# Induction data
+### Induction data
 
 There is also some induction data recorded from the Elashvili--de Graaf paper.
 
-## Jordan Blocks gap
+### jblockcode.g (Jordan Blocks)
+
+The file 
+
+[jblockcode.g](jblockcode.g)
+
+contains various routines to calculate Jordan block structures of nilpotent elements in various guises.
+
+For example, for a nilpotent element $e$ represented by a matrix, one may use `jblockmat':
+```
+gap> mat:=AdjointMatrix(B,O[1]);;
+gap> jblockmat(mat);
+[ [ 59, 1 ], [ 47, 1 ], [ 39, 1 ], [ 35, 1 ], [ 27, 1 ], [ 23, 1 ],
+  [ 15, 1 ], [ 3, 1 ] ]
+'''
+If it should first be reduced mod $p$:
+gap> p:=5;
+5
+gap> jblockpmat(mat,p);
+[ [ 25, 8 ], [ 24, 2 ] ]
+'''
+
+It is currently set to run automatically and generate all the tables in [Stewart, Jordan Blocks, LMS Comp]. So comment out from line 617 to the end if you don't want that.
+
