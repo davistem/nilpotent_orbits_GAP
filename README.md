@@ -51,16 +51,26 @@ gap> Length(OL);
 
 Bear in mind you need to use the appropriate function from the following list, matching your characteristic.
 
-OrbitsE6                          
-OrbitsE7_0                          
-OrbitsE7_2                          
-OrbitsE8_0                          
-OrbitsE8_2                          
-OrbitsE8_3                          
-OrbitsF4_0                          
+OrbitsE6
+
+OrbitsE7_0
+
+OrbitsE7_2
+
+OrbitsE8_0
+
+OrbitsE8_2
+
+OrbitsE8_3
+
+OrbitsF4_0
+
 OrbitsF4_2 
+
 OrbitsG2_0 
+
 OrbitsG2_2 
+
 OrbitsG2_3 
 
 # Lawther--Testerman representatives 
